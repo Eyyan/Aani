@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+.flex{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+      
+    display: grid;
+    grid-template-columns: 5vw 90vw 5vw ;
+    grid-template-rows: 15vh 80vh 5vh;
+    background-color: #232323;
+    grid-template-areas: ". header ."
+                         ". main ."
+                         ". . ." ;
+}
+
+.header{
+
+    grid-area: header;
+  
+}
+
+.container .header .answer{
+   
+    color: lightcyan;
+}
+
+.main{
+
+    grid-area: main;;
+    display: grid;
+    grid-template-rows: 20fr 80fr;
+    border: 1px solid #ffffff;
+}
+
+.OptionMain{
+    background-color: #181818 ;
+
+}
+
+.Circles{
+    background-color: #232323 ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    
+}
+
+
+.circle{
+
+    width: 160px;
+    height: 160px;
+    background-color: yellow;
+    border-radius: 50%; 
+    transition: all 300ms ease-in-out  ;
+    cursor: grab;
+}
+
+
+.main .reset{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: #181818;
+    font-size: 35px;
+    font-style: normal;
+    color: lightcyan;
+    border-radius: 8px 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.main .hard{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: #181818;
+    font-size: 35px;
+    font-style: normal;
+    color: lightcyan;
+    border-radius: 8px 8px;
+    border: none;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+
+
+
